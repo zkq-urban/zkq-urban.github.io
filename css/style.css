@@ -393,3 +393,69 @@ footer {
         flex-wrap: wrap;
     }
 }
+
+/* 亮色主题样式 */
+body.light-mode {
+    background-color: #ffffff !important;
+    color: #333333 !important;
+}
+
+body.light-mode header {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+
+body.light-mode .nav-logo {
+    color: #0066cc !important;
+}
+
+body.light-mode .nav-menu a {
+    color: #333333 !important;
+}
+
+body.light-mode .nav-menu a:hover {
+    color: #0066cc !important;
+    background-color: rgba(0, 102, 204, 0.1);
+}
+
+body.light-mode .lang-btn,
+body.light-mode .theme-btn {
+    border-color: #0066cc !important;
+    color: #0066cc !important;
+}
+
+body.light-mode .lang-btn:hover,
+body.light-mode .theme-btn:hover {
+    background-color: rgba(0, 102, 204, 0.1);
+}
+
+body.light-mode h2 {
+    color: #000000 !important;
+    border-left-color: #0066cc !important;
+}
+
+body.light-mode .bio,
+body.light-mode .bullet-list li,
+body.light-mode .list-item .meta,
+body.light-mode .list-item .advisor,
+body.light-mode .pub-citation,
+body.light-mode .stat {
+    color: #333333 !important;
+}
+
+body.light-mode .profile-info .subtitle {
+    color: #0066cc !important;
+}
+
+body.light-mode hr {
+    border-top-color: #ddd;
+}
+
+body.light-mode .social-links a {
+    color: #333333 !important;
+}
+
+body.light-mode .social-links a:hover {
+    color: #0066cc !important;
+    border-bottom-color: #0066cc !important;
+}

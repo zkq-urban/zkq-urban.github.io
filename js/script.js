@@ -35,27 +35,13 @@ function setTheme(theme) {
     const themeBtn = document.getElementById('themeToggle');
     
     if (theme === 'light') {
-        body.style.backgroundColor = '#ffffff';
-        body.style.color = '#333333';
-        document.querySelectorAll('.nav-menu a, .social-links a').forEach(el => {
-            el.style.color = '#333333';
-        });
+        body.classList.add('light-mode');
         themeBtn.innerHTML = '<i class="fas fa-sun"></i>';
         themeBtn.title = 'Switch to Dark Mode';
-        // 更新其他元素颜色
-        document.querySelectorAll('h2').forEach(el => el.style.color = '#000000');
-        document.querySelectorAll('p, li').forEach(el => el.style.color = '#333333');
     } else {
-        body.style.backgroundColor = '#0f1419';
-        body.style.color = '#cfd8dc';
-        document.querySelectorAll('.nav-menu a, .social-links a').forEach(el => {
-            el.style.color = '#b0bec5';
-        });
+        body.classList.remove('light-mode');
         themeBtn.innerHTML = '<i class="fas fa-moon"></i>';
         themeBtn.title = 'Switch to Light Mode';
-        // 恢复深色主题颜色
-        document.querySelectorAll('h2').forEach(el => el.style.color = '#ffffff');
-        document.querySelectorAll('p, li').forEach(el => el.style.color = '#b0bec5');
     }
 }
 
