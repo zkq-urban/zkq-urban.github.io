@@ -8,9 +8,9 @@ function setLanguage(lang) {
     // 更新所有有 data-en 和 data-zh 属性的元素
     document.querySelectorAll('[data-en][data-zh]').forEach(element => {
         if (lang === 'en') {
-            element.textContent = element.getAttribute('data-en');
+            element.innerHTML = element.getAttribute('data-en');
         } else {
-            element.textContent = element.getAttribute('data-zh');
+            element.innerHTML = element.getAttribute('data-zh');
         }
     });
     
