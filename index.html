@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的学术主页</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="nav-logo">学术主页</h1>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">关于我</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link">教育经历</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#publications" class="nav-link">出版物</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">研究项目</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">联系方式</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1>张教授</h1>
+                <p>计算机科学博士</p>
+                <p>清华大学计算机科学与技术系</p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">了解更多</a>
+                    <a href="#contact" class="btn btn-secondary">联系我</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">关于我</h2>
+                <div class="about-content">
+                    <div class="profile-img">
+                        <img src="images/profile.jpg" alt="我的照片" />
+                    </div>
+                    <div class="profile-text">
+                        <p>我是清华大学计算机科学与技术系的教授，专注于人工智能和机器学习领域的研究。我在深度学习、自然语言处理和计算机视觉方面有着丰富的研究经验，致力于推动AI技术的发展和应用。</p>
+                        <p>我的研究兴趣包括：</p>
+                        <ul>
+                            <li>深度学习与神经网络</li>
+                            <li>自然语言处理</li>
+                            <li>计算机视觉</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">教育经历</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>计算机科学博士</h3>
+                            <p class="timeline-date">2010 - 2015</p>
+                            <p>斯坦福大学，加利福尼亚，美国</p>
+                            <p>论文题目：<em>深度学习在自然语言处理中的应用</em></p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>计算机科学硕士</h3>
+                            <p class="timeline-date">2008 - 2010</p>
+                            <p>麻省理工学院，马萨诸塞，美国</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>计算机科学学士</h3>
+                            <p class="timeline-date">2004 - 2008</p>
+                            <p>清华大学，北京，中国</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="section">
+            <div class="container">
+                <h2 class="section-title">出版物</h2>
+                <div class="publications-list">
+                    <div class="publication">
+                        <h3>Attention Is All You Need: Transformer Architecture for NLP</h3>
+                        <p class="authors">Zhang, L., Chen, M., Liu, Y.</p>
+                        <p class="journal">Advances in Neural Information Processing Systems, 2023</p>
+                        <p class="abstract">This paper introduces a novel attention mechanism that significantly improves performance in natural language processing tasks while reducing computational requirements.</p>
+                        <div class="publication-links">
+                            <a href="#" class="btn btn-small">PDF</a>
+                            <a href="#" class="btn btn-small">DOI</a>
+                        </div>
+                    </div>
+                    <div class="publication">
+                        <h3>Generative Adversarial Networks for Medical Image Analysis</h3>
+                        <p class="authors">Zhang, L., Wang, J., Li, H.</p>
+                        <p class="journal">Nature Machine Intelligence, 2022</p>
+                        <p class="abstract">We propose a new framework for medical image analysis using generative adversarial networks, achieving state-of-the-art results on several benchmark datasets.</p>
+                        <div class="publication-links">
+                            <a href="#" class="btn btn-small">PDF</a>
+                            <a href="#" class="btn btn-small">DOI</a>
+                        </div>
+                    </div>
+                    <div class="publication">
+                        <h3>Federated Learning with Differential Privacy</h3>
+                        <p class="authors">Zhang, L., Smith, J., Brown, K.</p>
+                        <p class="journal">International Conference on Learning Representations, 2022</p>
+                        <p class="abstract">This work presents a new approach to federated learning that ensures privacy while maintaining model accuracy across distributed datasets.</p>
+                        <div class="publication-links">
+                            <a href="#" class="btn btn-small">PDF</a>
+                            <a href="#" class="btn btn-small">DOI</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">研究项目</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>智能医疗诊断系统</h3>
+                        <p>开发基于深度学习的医疗图像诊断系统，能够自动识别X光片和MRI图像中的异常模式。使用卷积神经网络和迁移学习技术，提高诊断准确率。</p>
+                        <p class="project-duration">2020 - 2023</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>多语言机器翻译</h3>
+                        <p>构建支持10种语言的神经机器翻译系统，使用Transformer架构和注意力机制，实现了高质量的跨语言翻译。</p>
+                        <p class="project-duration">2019 - 2021</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>自动驾驶感知系统</h3>
+                        <p>开发用于自动驾驶汽车的实时环境感知系统，结合激光雷达和摄像头数据，实现物体检测、跟踪和场景理解。</p>
+                        <p class="project-duration">2018 - 2020</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">联系方式</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>联系信息</h3>
+                        <p><strong>机构：</strong>清华大学计算机科学与技术系</p>
+                        <p><strong>地址：</strong>北京市海淀区清华园1号，100084</p>
+                        <p><strong>邮箱：</strong><a href="mailto:zhang.prof@tsinghua.edu.cn">zhang.prof@tsinghua.edu.cn</a></p>
+                        <p><strong>办公室：</strong>信息科学技术大楼1118室</p>
+                        
+                        <h3>社交媒体</h3>
+                        <div class="social-links">
+                            <a href="https://scholar.google.com/citations?user=example" class="social-link" target="_blank">Google Scholar</a>
+                            <a href="https://www.researchgate.net/profile/example" class="social-link" target="_blank">ResearchGate</a>
+                            <a href="https://www.linkedin.com/in/example" class="social-link" target="_blank">LinkedIn</a>
+                            <a href="https://orcid.org/0000-0000-0000-0000" class="social-link" target="_blank">ORCID</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">姓名</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">邮箱</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">主题</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">消息</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">发送消息</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 张教授. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
