@@ -11,263 +11,157 @@
     <header>
         <nav class="navbar">
             <div class="nav-container">
-                <h1 class="nav-logo" data-en="Keqi Zhou" data-zh="周科琦">Keqi Zhou</h1>
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link" data-en="About" data-zh="关于我">关于我</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#education" class="nav-link" data-en="Education" data-zh="教育背景">教育背景</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#publications" class="nav-link" data-en="Publications" data-zh="出版物">出版物</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#projects" class="nav-link" data-en="Projects" data-zh="研究项目">研究项目</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link" data-en="Contact" data-zh="联系方式">联系方式</a>
-                    </li>
-                    <li class="nav-item language-toggle">
-                        <button id="langToggle" class="lang-btn">English</button>
-                    </li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+                <div class="nav-left">
+                    <h1 class="nav-logo" data-en="Keqi Zhou" data-zh="周科琦">Keqi Zhou</h1>
+                </div>
+                <div class="nav-right">
+                    <button id="langToggle" class="lang-btn">English</button>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section id="hero" class="hero">
-            <div class="hero-content">
-                <h1>Keqi Zhou</h1>
-                <p data-en="Ph.D. in Earth Physics, Postdoctoral Researcher" data-zh="地球物理学博士，博士后研究员">地球物理学博士，博士后研究员</p>
-                <p data-en="National University of Singapore" data-zh="新加坡国立大学">新加坡国立大学</p>
-                <div class="hero-buttons">
-                    <a href="#about" class="btn btn-primary" data-en="Learn More" data-zh="了解更多">了解更多</a>
-                    <a href="#contact" class="btn btn-secondary" data-en="Contact Me" data-zh="联系我">联系我</a>
-                </div>
+    <main class="container">
+        <!-- 标题部分 -->
+        <section class="intro">
+            <h1>Keqi Zhou (周科琦)</h1>
+            <p class="subtitle" data-en="Postdoctoral Researcher, National University of Singapore" data-zh="新加坡国立大学博士后研究员">新加坡国立大学博士后研究员</p>
+            
+            <p class="bio" data-en="Ph.D. in Earth Physics (USTC, 2025). Research interests: urban climate simulation, urban heat island mechanisms, and intelligent remote sensing image analysis." data-zh="地球物理学博士（中国科学技术大学，2025年）。研究方向：城市气候数值模拟、城市热岛演化机制、高分辨率遥感影像智能处理。">
+                地球物理学博士（中国科学技术大学，2025年）。研究方向：城市气候数值模拟、城市热岛演化机制、高分辨率遥感影像智能处理。
+            </p>
+
+            <div class="social-links">
+                <a href="https://www.researchgate.net/profile/Keqi-Zhou" target="_blank" data-en="ResearchGate" data-zh="ResearchGate">ResearchGate</a>
+                <a href="https://scholar.google.com/citations?user=kPiI8jcAAAAJ&hl=zh-CN" target="_blank" data-en="Google Scholar" data-zh="Google Scholar">Google Scholar</a>
+                <a href="mailto:keqi_zhou@nus.edu.sg" data-en="Email" data-zh="邮箱">Email</a>
             </div>
         </section>
 
-        <section id="about" class="section">
-            <div class="container">
-                <h2 class="section-title" data-en="About Me" data-zh="关于我">关于我</h2>
-                <div class="about-content">
-                    <div class="profile-img">
-                        <img src="images/profile.jpg" alt="Keqi Zhou" />
-                    </div>
-                    <div class="profile-text">
-                        <p data-en="I am a Postdoctoral Researcher at the National University of Singapore, specializing in urban climate simulation and remote sensing image analysis. With a Ph.D. in Earth Physics from USTC, I focus on investigating urban heat island evolution mechanisms through numerical simulation of atmospheric processes and high-resolution remote sensing imagery." data-zh="我是新加坡国立大学的博士后研究员，专注于城市气候数值模拟与遥感影像分析。获得中国科学技术大学地球物理学博士学位，致力于通过大气过程数值模拟与高分辨率遥感数据研究城市热岛演化机制。">我是新加坡国立大学的博士后研究员，专注于城市气候数值模拟与遥感影像分析。获得中国科学技术大学地球物理学博士学位，致力于通过大气过程数值模拟与高分辨率遥感数据研究城市热岛演化机制。</p>
-                        
-                        <h3 data-en="Academic Links" data-zh="学术链接">学术链接</h3>
-                        <div class="social-links">
-                            <a href="https://www.researchgate.net/profile/Keqi-Zhou" class="social-link" target="_blank" data-en="ResearchGate" data-zh="ResearchGate">ResearchGate</a>
-                            <a href="https://scholar.google.com/citations?user=kPiI8jcAAAAJ&hl=zh-CN" class="social-link" target="_blank" data-en="Google Scholar" data-zh="Google Scholar">Google Scholar</a>
-                        </div>
-                        
-                        <h3 data-en="Research Interests" data-zh="研究方向">研究方向</h3>
-                        <ul>
-                            <li data-en="Numerical Simulation of Atmospheric Processes" data-zh="大气过程数值模拟">大气过程数值模拟</li>
-                            <li data-en="Urban Heat Island Evolution Mechanisms" data-zh="城市热岛演化机制">城市热岛演化机制</li>
-                            <li data-en="Intelligent Processing of High-Spatial-Resolution Remote Sensing Imagery" data-zh="高空间分辨率遥感影像智能化处理">高空间分辨率遥感影像智能化处理</li>
-                        </ul>
-                    </div>
-                </div>
+        <hr>
+
+        <!-- 教育背景 -->
+        <section class="education">
+            <h2 data-en="Education" data-zh="教育背景">教育背景</h2>
+            
+            <div class="edu-item">
+                <h3 data-en="Ph.D. in Earth Physics" data-zh="地球物理学博士">地球物理学博士</h3>
+                <p class="affiliation">中国科学技术大学 (2020-2025)</p>
+                <p data-en="Advisor: Prof. Lei Zhong" data-zh="导师：仲雷教授">导师：仲雷教授</p>
+            </div>
+
+            <div class="edu-item">
+                <h3 data-en="M.S. in Surveying and Mapping Science" data-zh="测绘科学与技术硕士">测绘科学与技术硕士</h3>
+                <p class="affiliation">中国地质大学（北京） (2017-2020)</p>
+                <p data-en="Advisor: Prof. Dongping Ming" data-zh="导师：明冬萍教授">导师：明冬萍教授</p>
+            </div>
+
+            <div class="edu-item">
+                <h3 data-en="B.S. in Surveying Engineering" data-zh="测绘工程学士">测绘工程学士</h3>
+                <p class="affiliation">内蒙古科技大学 (2013-2017)</p>
             </div>
         </section>
 
-        <section id="education" class="section bg-light">
-            <div class="container">
-                <h2 class="section-title" data-en="Education" data-zh="教育背景">教育背景</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3 data-en="Ph.D. in Earth Physics" data-zh="地球物理学博士">地球物理学博士</h3>
-                            <p class="timeline-date">2020 - 2025</p>
-                            <p data-en="University of Science and Technology of China" data-zh="中国科学技术大学">中国科学技术大学</p>
-                            <p data-en="School of Earth and Space Sciences" data-zh="地球和空间科学学院">地球和空间科学学院</p>
-                            <p data-en="Advisor: Prof. Lei Zhong" data-zh="导师：仲雷教授">导师：仲雷教授</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3 data-en="M.S. in Surveying and Mapping Science" data-zh="测绘科学与技术硕士">测绘科学与技术硕士</h3>
-                            <p class="timeline-date">2017 - 2020</p>
-                            <p data-en="China University of Geosciences (Beijing)" data-zh="中国地质大学（北京）">中国地质大学（北京）</p>
-                            <p data-en="School of Information Engineering" data-zh="信息工程学院">信息工程学院</p>
-                            <p data-en="Advisor: Prof. Dongping Ming" data-zh="导师：明冬萍教授">导师：明冬萍教授</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3 data-en="B.S. in Mining and Coal Engineering" data-zh="测绘工程学士">测绘工程学士</h3>
-                            <p class="timeline-date">2013 - 2017</p>
-                            <p data-en="Inner Mongolia University of Science and Technology" data-zh="内蒙古科技大学">内蒙古科技大学</p>
-                        </div>
-                    </div>
-                </div>
+        <hr>
+
+        <!-- 出版物 -->
+        <section class="publications">
+            <h2 data-en="Publications" data-zh="出版物">出版物</h2>
+            <p class="note" data-en="First Author: 3 JCR Q1 papers | Co-Author: 10+ SCI papers" data-zh="第一作者：3篇JCR Q1期刊论文 | 合作作者：10余篇SCI论文">
+                第一作者：3篇JCR Q1期刊论文 | 合作作者：10余篇SCI论文
+            </p>
+
+            <div class="pub-item">
+                <p class="pub-title">[8] Unveiling the Role of Western Pacific Subtropical High in Urban Heat Islands Using Local Climate Zones Coupled WRF-BEP/BEM</p>
+                <p class="pub-meta">Zhou, K., Zhong, L., Liu, J., Wang, Z., Liu, J. | Earth Systems and Environment, 2025 | <span class="badge">First Author</span></p>
+            </div>
+
+            <div class="pub-item">
+                <p class="pub-title">[7] Responses of the urban atmospheric thermal environment to two distinct heat waves and their changes with future urban expansion in a Chinese megacity</p>
+                <p class="pub-meta">Zhao, Y., Zhong, L., Zhou, K., Liu, B., Shu, W. | Geophysical Research Letters, 2024 | <span class="badge">Co-Author</span></p>
+            </div>
+
+            <div class="pub-item">
+                <p class="pub-title">[6] Evaluating the Impacts of Land Use/Land Cover Changes, Climatic Change and Climate Variations on Urban Heat Islands Using the WRF-UCM Model in Hefei, China</p>
+                <p class="pub-meta">Zhou, K., Zhong, L., Liu, J., Wu, Z. | Climatic Change, 2024 | <span class="badge">First Author</span></p>
+            </div>
+
+            <div class="pub-item">
+                <p class="pub-title">[5] Review on High Spatial Resolution Remote Sensing Image Segmentation Evaluation</p>
+                <p class="pub-meta">Chen, Y., Ming, D., Zhao, L., Lv, B., Zhou, K., Qing, Y. | Photogrammetric Engineering and Remote Sensing | <span class="badge">Co-Author</span></p>
+            </div>
+
+            <div class="pub-item">
+                <p class="pub-title">[4] Road Extraction From a High Spatial Resolution Remote Sensing Image Based on Richer Convolutional Features</p>
+                <p class="pub-meta">Hong, Z., Ming, D., Zhou, K., Guo, Y., Lu, T. | IEEE Access | <span class="badge">Co-Author</span></p>
+            </div>
+
+            <div class="pub-item">
+                <p class="pub-title">[3] A New Method of Region Majority Voting CNN for Very High Resolution Image Classification and its Scale Effect Analysis</p>
+                <p class="pub-meta">Lv, X., Ming, D., Zhou, K., Wang, M., Bao, H. | Remote Sensing | <span class="badge">Co-Author</span></p>
+            </div>
+
+            <div class="pub-item">
+                <p class="pub-title">[2] SO-CNN based urban functional zone fine division with VHR remote sensing image</p>
+                <p class="pub-meta">Zhou, W., Ming, D., Lv, X., Zhou, K., Bao, H., Hong, Z. | Remote Sensing of Environment, 236: 111445, 2020 | <span class="badge">Co-Author</span></p>
+            </div>
+
+            <div class="pub-item">
+                <p class="pub-title">[1] CNN-Based Land Cover Classification Combining Stratified Segmentation and Fusion of Point Cloud and Very High-Spatial Resolution Remote Sensing Image Data</p>
+                <p class="pub-meta">Zhou, K., Ming, D., Lv, X., Fang, J., Wang, M. | Remote Sensing, 11(17): 2057, 2019 | <span class="badge">First Author</span></p>
+            </div>
+
+            <p class="view-more"><a href="https://www.researchgate.net/profile/Keqi-Zhou" target="_blank" data-en="View more at ResearchGate →" data-zh="在ResearchGate查看更多 →">在ResearchGate查看更多 →</a></p>
+        </section>
+
+        <hr>
+
+        <!-- 研究项目 -->
+        <section class="projects">
+            <h2 data-en="Research Projects" data-zh="研究项目">研究项目</h2>
+            
+            <div class="proj-item">
+                <h3 data-en="NSFC Key Project" data-zh="国家自然科学基金面上基金项目">国家自然科学基金面上基金项目</h3>
+                <p data-en="High-Resolution Remote Sensing Land Cover Extraction and Scale Effects Analysis" data-zh="高分辨率遥感地表覆盖提取及尺度效应分析">高分辨率遥感地表覆盖提取及尺度效应分析</p>
+            </div>
+
+            <div class="proj-item">
+                <h3 data-en="NSFC Key Project" data-zh="国家自然科学基金面上基金项目">国家自然科学基金面上基金项目</h3>
+                <p data-en="Scale-Dependent Issues in Remote Sensing Image Processing and Analysis" data-zh="遥感影像处理与分析中的尺度相关问题研究">遥感影像处理与分析中的尺度相关问题研究</p>
+            </div>
+
+            <div class="proj-item">
+                <h3 data-en="National Key R&D Program" data-zh="国家重点研发计划项目">国家重点研发计划项目</h3>
+                <p data-en="Spatiotemporal Pattern Discovery in Geographic Big Data" data-zh="地理大数据挖掘与时空模式发现子课题">地理大数据挖掘与时空模式发现子课题</p>
+            </div>
+
+            <div class="proj-item">
+                <h3 data-en="CAS 'From 0 to 1' Project" data-zh="中国科学院基础前沿科学研究计划">中国科学院基础前沿科学研究计划</h3>
+                <p data-en="Quantitative Remote Sensing Methods for Urban Climate Change Impacts" data-zh="城镇化对气候变化影响的定量遥感技术方法研究">城镇化对气候变化影响的定量遥感技术方法研究</p>
             </div>
         </section>
 
-        <section id="publications" class="section bg-light">
-            <div class="container">
-                <h2 class="section-title" data-en="Publications" data-zh="出版物">出版物</h2>
-                <p class="publications-intro" data-en="As First Author: 3 papers in JCR Q1 journals. As Co-Author: 10+ SCI papers" data-zh="第一作者：JCR Q1期刊论文3篇，合作作者：SCI论文10余篇">第一作者：JCR Q1期刊论文3篇，合作作者：SCI论文10余篇</p>
-                <div class="publications-list">
-                    <div class="publication-item">
-                        <div class="pub-header">
-                            <span class="pub-num">[8]</span>
-                            <span class="pub-year">2025</span>
-                            <span class="pub-type first-author" data-en="First Author" data-zh="第一作者">第一作者</span>
-                        </div>
-                        <p class="pub-title">Unveiling the Role of Western Pacific Subtropical High in Urban Heat Islands Using Local Climate Zones Coupled WRF-BEP/BEM</p>
-                        <p class="pub-authors">Zhou, Keqi, Lei Zhong, Jie Liu, Zixin Wang, Jinchen Liu</p>
-                        <p class="pub-journal">Earth Systems and Environment</p>
-                        <a href="https://www.researchgate.net/profile/Keqi-Zhou" target="_blank" class="pub-link">ResearchGate</a>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-header">
-                            <span class="pub-num">[7]</span>
-                            <span class="pub-year">2024</span>
-                            <span class="pub-type" data-en="Co-Author" data-zh="合作作者">合作作者</span>
-                        </div>
-                        <p class="pub-title">Responses of the urban atmospheric thermal environment to two distinct heat waves and their changes with future urban expansion in a Chinese megacity</p>
-                        <p class="pub-authors">Zhao, Y., Zhong, L., Zhou, K., Liu, B., Shu, W.</p>
-                        <p class="pub-journal">Geophysical Research Letters</p>
-                        <a href="https://www.researchgate.net/profile/Keqi-Zhou" target="_blank" class="pub-link">ResearchGate</a>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-header">
-                            <span class="pub-num">[6]</span>
-                            <span class="pub-year">2024</span>
-                            <span class="pub-type first-author" data-en="First Author" data-zh="第一作者">第一作者</span>
-                        </div>
-                        <p class="pub-title">Evaluating the Impacts of Land Use/Land Cover Changes, Climatic Change and Climate Variations on Urban Heat Islands Using the WRF-UCM Model in Hefei, China</p>
-                        <p class="pub-authors">Keqi Zhou, Lei Zhong, Jie Liu, Zhenhao Wu</p>
-                        <p class="pub-journal">Climatic Change</p>
-                        <a href="https://www.researchgate.net/profile/Keqi-Zhou" target="_blank" class="pub-link">ResearchGate</a>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-header">
-                            <span class="pub-num">[5]</span>
-                            <span class="pub-year">—</span>
-                            <span class="pub-type" data-en="Co-Author" data-zh="合作作者">合作作者</span>
-                        </div>
-                        <p class="pub-title">Review on High Spatial Resolution Remote Sensing Image Segmentation Evaluation</p>
-                        <p class="pub-authors">Yangyang Chen, Dongping Ming, Lu Zhao, Beiru Lv, Keqi Zhou, Yuanzhao Qing</p>
-                        <p class="pub-journal">Photogrammetric Engineering and Remote Sensing</p>
-                        <a href="https://www.researchgate.net/profile/Keqi-Zhou" target="_blank" class="pub-link">ResearchGate</a>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-header">
-                            <span class="pub-num">[4]</span>
-                            <span class="pub-year">—</span>
-                            <span class="pub-type" data-en="Co-Author" data-zh="合作作者">合作作者</span>
-                        </div>
-                        <p class="pub-title">Road Extraction From a High Spatial Resolution Remote Sensing Image Based on Richer Convolutional Features</p>
-                        <p class="pub-authors">Zhaoli Hong, Dongping Ming, Keqi Zhou, Ya Guo, Tingting Lu</p>
-                        <p class="pub-journal">IEEE Access</p>
-                        <a href="https://www.researchgate.net/profile/Keqi-Zhou" target="_blank" class="pub-link">ResearchGate</a>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-header">
-                            <span class="pub-num">[3]</span>
-                            <span class="pub-year">—</span>
-                            <span class="pub-type" data-en="Co-Author" data-zh="合作作者">合作作者</span>
-                        </div>
-                        <p class="pub-title">A New Method of Region Majority Voting CNN for Very High Resolution Image Classification and its Scale Effect Analysis</p>
-                        <p class="pub-authors">Xianwei Lv, Dongping Ming, Keqi Zhou, Min Wang, Hanqing Bao</p>
-                        <p class="pub-journal">Remote Sensing</p>
-                        <a href="https://www.researchgate.net/profile/Keqi-Zhou" target="_blank" class="pub-link">ResearchGate</a>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-header">
-                            <span class="pub-num">[2]</span>
-                            <span class="pub-year">2020</span>
-                            <span class="pub-type" data-en="Co-Author" data-zh="合作作者">合作作者</span>
-                        </div>
-                        <p class="pub-title">SO-CNN based urban functional zone fine division with VHR remote sensing image</p>
-                        <p class="pub-authors">Wen Zhou, Dongping Ming, Xianwei Lv, Keqi Zhou, Hanqing Bao, Zhaoli Hong</p>
-                        <p class="pub-journal">Remote Sensing of Environment, 236: 111445</p>
-                        <a href="https://www.researchgate.net/profile/Keqi-Zhou" target="_blank" class="pub-link">ResearchGate</a>
-                    </div>
-                    <div class="publication-item">
-                        <div class="pub-header">
-                            <span class="pub-num">[1]</span>
-                            <span class="pub-year">2019</span>
-                            <span class="pub-type first-author" data-en="First Author" data-zh="第一作者">第一作者</span>
-                        </div>
-                        <p class="pub-title">CNN-Based Land Cover Classification Combining Stratified Segmentation and Fusion of Point Cloud and Very High-Spatial Resolution Remote Sensing Image Data</p>
-                        <p class="pub-authors">Keqi Zhou, Dongping Ming, Xianwei Lv, Ju Fang, Min Wang</p>
-                        <p class="pub-journal">Remote Sensing, 11(17): 2057</p>
-                        <a href="https://www.researchgate.net/profile/Keqi-Zhou" target="_blank" class="pub-link">ResearchGate</a>
-                    </div>
-                </div>
-                <div class="more-publications" data-en="More publications and details available at:" data-zh="更多出版物和详细信息请访问：">
-                    更多出版物和详细信息请访问：
-                    <a href="https://www.researchgate.net/profile/Keqi-Zhou" target="_blank">ResearchGate</a>
-                </div>
-            </div>
-        </section>
+        <hr>
 
-        <section id="projects" class="section">
-            <div class="container">
-                <h2 class="section-title" data-en="Research Projects" data-zh="研究项目">研究项目</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <h3 data-en="NSFC Key Project" data-zh="国家自然科学基金面上基金项目">国家自然科学基金面上基金项目</h3>
-                        <p data-en="High-Resolution Remote Sensing Land Cover Extraction and Scale Effects Analysis" data-zh="高分辨率遥感地表覆盖提取及尺度效应分析">高分辨率遥感地表覆盖提取及尺度效应分析</p>
-                    </div>
-                    <div class="project-card">
-                        <h3 data-en="NSFC Key Project" data-zh="国家自然科学基金面上基金项目">国家自然科学基金面上基金项目</h3>
-                        <p data-en="Scale-Dependent Issues in Remote Sensing Image Processing and Analysis" data-zh="遥感影像处理与分析中的尺度相关问题研究">遥感影像处理与分析中的尺度相关问题研究</p>
-                    </div>
-                    <div class="project-card">
-                        <h3 data-en="National Key R&D Program" data-zh="国家重点研发计划项目">国家重点研发计划项目</h3>
-                        <p data-en="Spatiotemporal Pattern Discovery in Geographic Big Data" data-zh="地理大数据挖掘与时空模式发现子课题">地理大数据挖掘与时空模式发现子课题</p>
-                    </div>
-                    <div class="project-card">
-                        <h3 data-en="CAS 'From 0 to 1' Project" data-zh="中国科学院基础前沿科学研究计划">中国科学院基础前沿科学研究计划</h3>
-                        <p data-en="Quantitative Remote Sensing Methods for Urban Climate Change Impacts" data-zh="城镇化对气候变化影响的定量遥感技术方法研究">城镇化对气候变化影响的定量遥感技术方法研究</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section">
-            <div class="container">
-                <h2 class="section-title" data-en="Contact" data-zh="联系方式">联系方式</h2>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h3 data-en="Basic Information" data-zh="基本信息">基本信息</h3>
-                        <p><strong data-en="Name:" data-zh="姓名：">姓名：</strong>周科琦 (Keqi Zhou)</p>
-                        <p><strong data-en="Location:" data-zh="籍贯：">籍贯：</strong><span data-en="Hefei, Anhui, China" data-zh="中国安徽省合肥市">中国安徽省合肥市</span></p>
-                        <p><strong data-en="Birth Date:" data-zh="出生日期：">出生日期：</strong>1995-06-07</p>
-                        <p><strong data-en="Phone:" data-zh="电话：">电话：</strong>+86 18556369677</p>
-                        <p><strong data-en="Email:" data-zh="邮箱：">邮箱：</strong><a href="mailto:keqi_zhou@nus.edu.sg">keqi_zhou@nus.edu.sg</a></p>
-                        
-                        <h3 data-en="Current Position" data-zh="现任职位">现任职位</h3>
-                        <p><strong data-en="Affiliation:" data-zh="机构：">机构：</strong><span data-en="National University of Singapore" data-zh="新加坡国立大学">新加坡国立大学</span></p>
-                        <p><strong data-en="Title:" data-zh="职位：">职位：</strong><span data-en="Postdoctoral Researcher" data-zh="博士后研究员">博士后研究员</span></p>
-                        <p><strong data-en="Supervisor:" data-zh="合作导师：">合作导师：</strong>Prof. Yuan Chao</p>
-                    </div>
-                </div>
-            </div>
+        <!-- 联系方式 -->
+        <section class="contact">
+            <h2 data-en="Contact" data-zh="联系方式">联系方式</h2>
+            
+            <p><strong data-en="Email" data-zh="邮箱">邮箱</strong>: <a href="mailto:keqi_zhou@nus.edu.sg">keqi_zhou@nus.edu.sg</a></p>
+            <p><strong data-en="Phone" data-zh="电话">电话</strong>: +86 18556369677</p>
+            <p><strong data-en="Location" data-zh="地址">地址</strong>: National University of Singapore</p>
+            
+            <p style="margin-top: 1.5rem;">
+                <strong data-en="Follow" data-zh="关注">关注</strong>: 
+                <a href="https://www.researchgate.net/profile/Keqi-Zhou" target="_blank">ResearchGate</a> | 
+                <a href="https://scholar.google.com/citations?user=kPiI8jcAAAAJ&hl=zh-CN" target="_blank">Google Scholar</a> | 
+                <a href="https://github.com/zkq-urban" target="_blank">GitHub</a>
+            </p>
         </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Keqi Zhou. All rights reserved. | <a href="https://github.com/zkq-urban/zkq-urban.github.io" target="_blank">GitHub</a></p>
-        </div>
+        <p>&copy; 2026 Keqi Zhou. All rights reserved.</p>
     </footer>
 
     <script src="js/script.js"></script>
