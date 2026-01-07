@@ -1,4 +1,4 @@
-// 语言切换功能
+// 语言切换功能 v1.2 - 修复 HTML 标签渲染问题
 let currentLanguage = localStorage.getItem('language') || 'zh';
 
 function setLanguage(lang) {
@@ -7,11 +7,12 @@ function setLanguage(lang) {
     
     // 更新所有有 data-en 和 data-zh 属性的元素
     document.querySelectorAll('[data-en][data-zh]').forEach(element => {
-        if (lang === 'en') {
-            element.innerHTML = element.getAttribute('data-en');
-        } else {
-            element.innerHTML = element.getAttribute('data-zh');
-        }
+        const content = lang === 'en' 
+            ? element.getAttribute('data-en') 
+            : element.getAttribute('data-zh');
+        
+        // 强制使用 innerHTML 以解析 <br> 等标签
+        element.innerHTML = content;
     });
     
     // 更新语言按钮
