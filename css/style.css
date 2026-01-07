@@ -345,6 +345,17 @@ main {
     color: #495057;
 }
 
+.publication-type {
+    display: inline-block;
+    background-color: #e3f2fd;
+    color: #1565c0;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
 .publication-links {
     margin-top: 1rem;
 }
