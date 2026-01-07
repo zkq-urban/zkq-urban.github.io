@@ -67,7 +67,7 @@ header {
 main.container {
     max-width: 900px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 60px 20px 40px; /* 增加顶部内边距以避免被固定导航栏遮挡 */
 }
 
 /* 分隔线 */
