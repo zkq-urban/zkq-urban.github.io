@@ -101,6 +101,7 @@ header {
     color: #90caf9;
     margin-bottom: 20px;
     line-height: 1.4;
+    white-space: pre-line; /* 允许显示字面换行 */
 }
 
 .social-links {
