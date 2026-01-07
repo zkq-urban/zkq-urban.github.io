@@ -49,6 +49,8 @@ header {
 
 .nav-left {
     flex-shrink: 0;
+    min-width: 280px;
+    max-width: 280px;
 }
 
 .nav-middle {
@@ -70,6 +72,8 @@ header {
 .nav-menu li {
     display: inline-block;
     white-space: nowrap;
+    min-width: 60px;
+    text-align: center;
 }
 
 .nav-menu a {
@@ -78,6 +82,8 @@ header {
     padding: 6px 12px;
     border-radius: 4px;
     transition: all 0.2s ease;
+    display: inline-block;
+    width: 100%;
 }
 
 .nav-menu a:hover {
@@ -90,6 +96,8 @@ header {
     display: flex;
     gap: 10px;
     align-items: center;
+    min-width: 120px;
+    justify-content: flex-end;
 }
 
 .nav-logo {
