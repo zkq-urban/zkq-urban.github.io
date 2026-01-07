@@ -1,5 +1,6 @@
 // 语言切换功能 v1.2 - 修复 HTML 标签渲染问题
 let currentLanguage = localStorage.getItem('language') || 'zh';
+let currentTheme = localStorage.getItem('theme') || 'dark';
 
 function setLanguage(lang) {
     currentLanguage = lang;
@@ -26,9 +27,42 @@ function setLanguage(lang) {
     }
 }
 
-// 页面加载时设置语言
+function setTheme(theme) {
+    currentTheme = theme;
+    localStorage.setItem('theme', theme);
+    
+    const body = document.body;
+    const themeBtn = document.getElementById('themeToggle');
+    
+    if (theme === 'light') {
+        body.style.backgroundColor = '#ffffff';
+        body.style.color = '#333333';
+        document.querySelectorAll('.nav-menu a, .social-links a').forEach(el => {
+            el.style.color = '#333333';
+        });
+        themeBtn.innerHTML = '<i class="fas fa-sun"></i>';
+        themeBtn.title = 'Switch to Dark Mode';
+        // 更新其他元素颜色
+        document.querySelectorAll('h2').forEach(el => el.style.color = '#000000');
+        document.querySelectorAll('p, li').forEach(el => el.style.color = '#333333');
+    } else {
+        body.style.backgroundColor = '#0f1419';
+        body.style.color = '#cfd8dc';
+        document.querySelectorAll('.nav-menu a, .social-links a').forEach(el => {
+            el.style.color = '#b0bec5';
+        });
+        themeBtn.innerHTML = '<i class="fas fa-moon"></i>';
+        themeBtn.title = 'Switch to Light Mode';
+        // 恢复深色主题颜色
+        document.querySelectorAll('h2').forEach(el => el.style.color = '#ffffff');
+        document.querySelectorAll('p, li').forEach(el => el.style.color = '#b0bec5');
+    }
+}
+
+// 页面加载时设置语言和主题
 document.addEventListener('DOMContentLoaded', function() {
     setLanguage(currentLanguage);
+    setTheme(currentTheme);
     
     // 语言切换按钮事件监听
     const langToggle = document.getElementById('langToggle');
@@ -36,6 +70,15 @@ document.addEventListener('DOMContentLoaded', function() {
         langToggle.addEventListener('click', function() {
             const newLang = currentLanguage === 'en' ? 'zh' : 'en';
             setLanguage(newLang);
+        });
+    }
+    
+    // 主题切换按钮事件监听
+    const themeToggle = document.getElementById('themeToggle');
+    if (themeToggle) {
+        themeToggle.addEventListener('click', function() {
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            setTheme(newTheme);
         });
     }
 });
