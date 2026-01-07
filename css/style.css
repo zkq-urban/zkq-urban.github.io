@@ -313,79 +313,93 @@ main {
     margin-bottom: 0.5rem;
 }
 
-/* 研究方向部分 */
-.research-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.research-item {
-    background: #1a1f2e;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-    border-left: 4px solid #64b5f6;
-}
-
-.research-item h3 {
-    color: #ffffff;
-    margin-bottom: 1rem;
-}
-
 /* 出版物列表 */
 .publications-list {
     max-width: 900px;
     margin: 0 auto;
 }
 
-.publication {
+.publication-item {
     background: #1a1f2e;
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-    border-left: 4px solid #64b5f6;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-left: 3px solid #64b5f6;
 }
 
-.publication h3 {
-    color: #ffffff;
-    margin-bottom: 0.5rem;
+.pub-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 8px;
 }
 
-.authors {
-    color: #90caf9;
-    font-style: italic;
-    margin-bottom: 0.5rem;
-}
-
-.journal {
-    color: #b0bec5;
-    margin-bottom: 1rem;
+.pub-num {
     font-size: 0.9rem;
+    color: #64b5f6;
+    font-weight: 600;
+    min-width: 35px;
 }
 
-.abstract {
-    margin-bottom: 1rem;
-    color: #cfd8dc;
+.pub-year {
+    font-size: 0.85rem;
+    color: #90caf9;
+    min-width: 50px;
 }
 
-.publication-type {
+.pub-type {
     display: inline-block;
     background-color: #1e3c72;
     color: #64b5f6;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 0.85rem;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
     font-weight: 600;
-    margin-bottom: 1rem;
     border: 1px solid #64b5f6;
 }
 
-.publication-links {
-    margin-top: 1rem;
+.pub-type.first-author {
+    background-color: #2d5a3d;
+    color: #4fc3f7;
+    border-color: #4fc3f7;
+}
+
+.pub-title {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.pub-authors {
+    font-size: 0.85rem;
+    color: #90caf9;
+    font-style: italic;
+    margin-bottom: 4px;
+}
+
+.pub-journal {
+    font-size: 0.85rem;
+    color: #b0bec5;
+    margin-bottom: 8px;
+}
+
+.pub-link {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: #64b5f6;
+    border: 1px solid #64b5f6;
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.pub-link:hover {
+    background-color: #64b5f6;
+    color: #0f1419;
 }
 
 /* 项目网格 */
@@ -436,47 +450,6 @@ main {
     color: #64b5f6;
     font-weight: 500;
     margin-left: 0.5rem;
-}
-
-/* 技能部分 */
-.skills-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.skill-category {
-    background: #1a1f2e;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-}
-
-.skill-category h3 {
-    color: #ffffff;
-    margin-bottom: 1rem;
-}
-
-.skill-category ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.skill-category li {
-    padding: 8px 0;
-    padding-left: 20px;
-    position: relative;
-    color: #b0bec5;
-}
-
-.skill-category li:before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    color: #64b5f6;
-    font-weight: bold;
 }
 
 /* 联系方式部分 */
