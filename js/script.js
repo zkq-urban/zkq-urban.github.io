@@ -1,3 +1,44 @@
+// 语言切换功能
+let currentLanguage = localStorage.getItem('language') || 'zh';
+
+function setLanguage(lang) {
+    currentLanguage = lang;
+    localStorage.setItem('language', lang);
+    
+    // 更新所有有 data-en 和 data-zh 属性的元素
+    document.querySelectorAll('[data-en][data-zh]').forEach(element => {
+        if (lang === 'en') {
+            element.textContent = element.getAttribute('data-en');
+        } else {
+            element.textContent = element.getAttribute('data-zh');
+        }
+    });
+    
+    // 更新语言按钮
+    const langBtn = document.getElementById('langToggle');
+    if (lang === 'en') {
+        langBtn.textContent = '中文';
+        document.documentElement.lang = 'en';
+    } else {
+        langBtn.textContent = 'English';
+        document.documentElement.lang = 'zh-CN';
+    }
+}
+
+// 页面加载时设置语言
+document.addEventListener('DOMContentLoaded', function() {
+    setLanguage(currentLanguage);
+});
+
+// 语言切换按钮事件监听
+const langToggle = document.getElementById('langToggle');
+if (langToggle) {
+    langToggle.addEventListener('click', function() {
+        const newLang = currentLanguage === 'en' ? 'zh' : 'en';
+        setLanguage(newLang);
+    });
+}
+
 // 移动端导航菜单切换
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
@@ -27,40 +68,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         
         if (targetElement) {
             window.scrollTo({
-                top: targetElement.offsetTop - 70, // 考虑固定导航栏的高度
+                top: targetElement.offsetTop - 70,
                 behavior: 'smooth'
             });
         }
     });
 });
 
-// 表单提交处理
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // 获取表单数据
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const subject = document.getElementById('subject').value;
-        const message = document.getElementById('message').value;
-        
-        // 这里可以添加实际的表单提交逻辑
-        // 例如发送到服务器或通过邮件服务发送
-        console.log('表单提交数据:', { name, email, subject, message });
-        
-        // 显示提交成功的消息
-        alert('感谢您的消息！我会尽快回复您。');
-        
-        // 重置表单
-        contactForm.reset();
-    });
-}
-
 // 添加滚动效果 - 当元素进入视窗时添加动画
 function animateOnScroll() {
-    const elements = document.querySelectorAll('.timeline-item, .publication, .project-card');
+    const elements = document.querySelectorAll('.timeline-item, .publication, .project-card, .research-item, .skill-category');
     
     elements.forEach(element => {
         const elementPosition = element.getBoundingClientRect().top;
@@ -73,35 +90,29 @@ function animateOnScroll() {
     });
 }
 
-// 为时间线项目和卡片添加初始样式
+// 为动画元素添加初始样式
 document.addEventListener('DOMContentLoaded', function() {
     const timelineItems = document.querySelectorAll('.timeline-item');
     const publications = document.querySelectorAll('.publication');
     const projectCards = document.querySelectorAll('.project-card');
+    const researchItems = document.querySelectorAll('.research-item');
+    const skillCategories = document.querySelectorAll('.skill-category');
     
-    // 设置初始状态（隐藏并稍微向下偏移）
-    timelineItems.forEach(item => {
+    const allAnimatedElements = [
+        ...timelineItems,
+        ...publications,
+        ...projectCards,
+        ...researchItems,
+        ...skillCategories
+    ];
+    
+    allAnimatedElements.forEach(item => {
         item.style.opacity = '0';
         item.style.transform = 'translateY(20px)';
         item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     });
     
-    publications.forEach(pub => {
-        pub.style.opacity = '0';
-        pub.style.transform = 'translateY(20px)';
-        pub.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    });
-    
-    projectCards.forEach(card => {
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(20px)';
-        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    });
-    
-    // 监听滚动事件以触发动画
     window.addEventListener('scroll', animateOnScroll);
-    
-    // 页面加载时检查一次，以处理初始可见的元素
     animateOnScroll();
 });
 
@@ -119,7 +130,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// 添加回到顶部按钮功能（可选）
+// 添加回到顶部按钮功能
 function addBackToTopButton() {
     const backToTopButton = document.createElement('button');
     backToTopButton.innerHTML = '↑';
@@ -161,5 +172,4 @@ function addBackToTopButton() {
     });
 }
 
-// 页面加载完成后添加回到顶部按钮
 document.addEventListener('DOMContentLoaded', addBackToTopButton);

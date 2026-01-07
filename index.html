@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的学术主页</title>
+    <title>Keqi Zhou - Academic Homepage</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
@@ -11,22 +11,31 @@
     <header>
         <nav class="navbar">
             <div class="nav-container">
-                <h1 class="nav-logo">学术主页</h1>
+                <h1 class="nav-logo">Keqi Zhou</h1>
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">关于我</a>
+                        <a href="#about" class="nav-link" data-en="About" data-zh="关于我">关于我</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#education" class="nav-link">教育经历</a>
+                        <a href="#education" class="nav-link" data-en="Education" data-zh="教育背景">教育背景</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#publications" class="nav-link">出版物</a>
+                        <a href="#research" class="nav-link" data-en="Research" data-zh="研究方向">研究方向</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#projects" class="nav-link">研究项目</a>
+                        <a href="#publications" class="nav-link" data-en="Publications" data-zh="出版物">出版物</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact" class="nav-link">联系方式</a>
+                        <a href="#projects" class="nav-link" data-en="Projects" data-zh="研究项目">研究项目</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link" data-en="Skills" data-zh="技能">技能</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" data-en="Contact" data-zh="联系方式">联系方式</a>
+                    </li>
+                    <li class="nav-item language-toggle">
+                        <button id="langToggle" class="lang-btn">English</button>
                     </li>
                 </ul>
                 <div class="hamburger">
@@ -41,30 +50,30 @@
     <main>
         <section id="hero" class="hero">
             <div class="hero-content">
-                <h1>张教授</h1>
-                <p>计算机科学博士</p>
-                <p>清华大学计算机科学与技术系</p>
+                <h1>Keqi Zhou</h1>
+                <p data-en="Ph.D. in Earth Physics, Postdoctoral Researcher" data-zh="地球物理学博士，博士后研究员">地球物理学博士，博士后研究员</p>
+                <p data-en="National University of Singapore" data-zh="新加坡国立大学">新加坡国立大学</p>
                 <div class="hero-buttons">
-                    <a href="#about" class="btn btn-primary">了解更多</a>
-                    <a href="#contact" class="btn btn-secondary">联系我</a>
+                    <a href="#about" class="btn btn-primary" data-en="Learn More" data-zh="了解更多">了解更多</a>
+                    <a href="#contact" class="btn btn-secondary" data-en="Contact Me" data-zh="联系我">联系我</a>
                 </div>
             </div>
         </section>
 
         <section id="about" class="section">
             <div class="container">
-                <h2 class="section-title">关于我</h2>
+                <h2 class="section-title" data-en="About Me" data-zh="关于我">关于我</h2>
                 <div class="about-content">
                     <div class="profile-img">
-                        <img src="images/profile.jpg" alt="我的照片" />
+                        <img src="images/profile.jpg" alt="Keqi Zhou" />
                     </div>
                     <div class="profile-text">
-                        <p>我是清华大学计算机科学与技术系的教授，专注于人工智能和机器学习领域的研究。我在深度学习、自然语言处理和计算机视觉方面有着丰富的研究经验，致力于推动AI技术的发展和应用。</p>
-                        <p>我的研究兴趣包括：</p>
+                        <p data-en="I am a Postdoctoral Researcher at the National University of Singapore, specializing in urban climate simulation and remote sensing image analysis. With a Ph.D. in Earth Physics from USTC, I focus on investigating urban heat island evolution mechanisms through numerical simulation of atmospheric processes and high-resolution remote sensing imagery." data-zh="我是新加坡国立大学的博士后研究员，专注于城市气候数值模拟和遥感影像分析。我获得了中国科学技术大学地球物理专业博士学位，致力于通过大气过程数值模拟和高空间分辨率遥感影像研究城市热岛演化机制。">我是新加坡国立大学的博士后研究员，专注于城市气候数值模拟和遥感影像分析。我获得了中国科学技术大学地球物理专业博士学位，致力于通过大气过程数值模拟和高空间分辨率遥感影像研究城市热岛演化机制。</p>
+                        <p data-en="My Research Interests:" data-zh="我的研究兴趣：">我的研究兴趣：</p>
                         <ul>
-                            <li>深度学习与神经网络</li>
-                            <li>自然语言处理</li>
-                            <li>计算机视觉</li>
+                            <li data-en="Numerical Simulation of Atmospheric Processes" data-zh="大气过程数值模拟">大气过程数值模拟</li>
+                            <li data-en="Urban Heat Island Evolution Mechanisms" data-zh="城市热岛演化机制">城市热岛演化机制</li>
+                            <li data-en="Intelligent Processing of High-Spatial-Resolution Remote Sensing Imagery" data-zh="高空间分辨率遥感影像智能化处理">高空间分辨率遥感影像智能化处理</li>
                         </ul>
                     </div>
                 </div>
@@ -73,93 +82,172 @@
 
         <section id="education" class="section bg-light">
             <div class="container">
-                <h2 class="section-title">教育经历</h2>
+                <h2 class="section-title" data-en="Education" data-zh="教育背景">教育背景</h2>
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3>计算机科学博士</h3>
-                            <p class="timeline-date">2010 - 2015</p>
-                            <p>斯坦福大学，加利福尼亚，美国</p>
-                            <p>论文题目：<em>深度学习在自然语言处理中的应用</em></p>
+                            <h3 data-en="Ph.D. in Earth Physics" data-zh="地球物理学博士">地球物理学博士</h3>
+                            <p class="timeline-date">2020 - 2025</p>
+                            <p data-en="University of Science and Technology of China" data-zh="中国科学技术大学">中国科学技术大学</p>
+                            <p data-en="School of Earth and Space Sciences" data-zh="地球和空间科学学院">地球和空间科学学院</p>
+                            <p data-en="Advisor: Prof. Lei Zhong" data-zh="导师：仲雷教授">导师：仲雷教授</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3>计算机科学硕士</h3>
-                            <p class="timeline-date">2008 - 2010</p>
-                            <p>麻省理工学院，马萨诸塞，美国</p>
+                            <h3 data-en="M.S. in Surveying and Mapping Science" data-zh="测绘科学与技术硕士">测绘科学与技术硕士</h3>
+                            <p class="timeline-date">2017 - 2020</p>
+                            <p data-en="China University of Geosciences (Beijing)" data-zh="中国地质大学（北京）">中国地质大学（北京）</p>
+                            <p data-en="School of Information Engineering" data-zh="信息工程学院">信息工程学院</p>
+                            <p data-en="Advisor: Prof. Dongping Ming" data-zh="导师：明冬萍教授">导师：明冬萍教授</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3>计算机科学学士</h3>
-                            <p class="timeline-date">2004 - 2008</p>
-                            <p>清华大学，北京，中国</p>
+                            <h3 data-en="B.S. in Mining and Coal Engineering" data-zh="测绘工程学士">测绘工程学士</h3>
+                            <p class="timeline-date">2013 - 2017</p>
+                            <p data-en="Inner Mongolia University of Science and Technology" data-zh="内蒙古科技大学">内蒙古科技大学</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="publications" class="section">
+        <section id="research" class="section">
             <div class="container">
-                <h2 class="section-title">出版物</h2>
+                <h2 class="section-title" data-en="Research Interests" data-zh="研究方向">研究方向</h2>
+                <div class="research-content">
+                    <div class="research-item">
+                        <h3 data-en="Urban Climate Numerical Simulation" data-zh="城市气候数值模拟">城市气候数值模拟</h3>
+                        <p data-en="Proficient in PALM large-eddy simulation model and WRF mesoscale model with single/multi-layer coupling methods for urban-scale climate simulation." data-zh="精通PALM大涡模拟模型和WRF中尺度模型，熟悉耦合单、多冠层的城市尺度气候模拟方法。">精通PALM大涡模拟模型和WRF中尺度模型，熟悉耦合单、多冠层的城市尺度气候模拟方法。</p>
+                    </div>
+                    <div class="research-item">
+                        <h3 data-en="Urban Heat Island Research" data-zh="城市热岛研究">城市热岛研究</h3>
+                        <p data-en="Investigating the evolution mechanisms of urban heat islands through high-resolution remote sensing and numerical simulation, analyzing the impacts of urbanization and land use changes on urban thermal environment." data-zh="通过高分辨率遥感和数值模拟研究城市热岛演化机制，分析城市化和土地利用变化对城市热环境的影响。">通过高分辨率遥感和数值模拟研究城市热岛演化机制，分析城市化和土地利用变化对城市热环境的影响。</p>
+                    </div>
+                    <div class="research-item">
+                        <h3 data-en="Remote Sensing Image Analysis" data-zh="遥感影像分析">遥感影像分析</h3>
+                        <p data-en="Expertise in intelligent processing of very high-resolution remote sensing imagery using deep learning methods (CNN) for land cover classification and urban functional zone mapping." data-zh="利用深度学习方法（CNN）进行超高分辨率遥感影像的智能化处理，包括土地覆盖分类和城市功能区划分。">利用深度学习方法（CNN）进行超高分辨率遥感影像的智能化处理，包括土地覆盖分类和城市功能区划分。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title" data-en="Publications" data-zh="出版物">出版物</h2>
+                <p class="publications-intro" data-en="As First Author: 3 papers in JCR Q1 journals. As Co-Author: 10+ SCI papers" data-zh="第一作者：JCR Q1期刊论文3篇，合作作者：SCI论文10余篇">第一作者：JCR Q1期刊论文3篇，合作作者：SCI论文10余篇</p>
                 <div class="publications-list">
                     <div class="publication">
-                        <h3>Attention Is All You Need: Transformer Architecture for NLP</h3>
-                        <p class="authors">Zhang, L., Chen, M., Liu, Y.</p>
-                        <p class="journal">Advances in Neural Information Processing Systems, 2023</p>
-                        <p class="abstract">This paper introduces a novel attention mechanism that significantly improves performance in natural language processing tasks while reducing computational requirements.</p>
+                        <h3>[1] CNN-Based Land Cover Classification Combining Stratified Segmentation and Fusion of Point Cloud and Very High-Spatial Resolution Remote Sensing Image Data</h3>
+                        <p class="authors">Keqi Zhou, Dongping Ming, Xianwei Lv, Ju Fang, Min Wang</p>
+                        <p class="journal">Remote Sensing, 2019, 11(17): 2057</p>
                         <div class="publication-links">
-                            <a href="#" class="btn btn-small">PDF</a>
-                            <a href="#" class="btn btn-small">DOI</a>
+                            <a href="https://www.researchgate.net/profile/Keqi-Zhou" class="btn btn-small" target="_blank">ResearchGate</a>
                         </div>
                     </div>
                     <div class="publication">
-                        <h3>Generative Adversarial Networks for Medical Image Analysis</h3>
-                        <p class="authors">Zhang, L., Wang, J., Li, H.</p>
-                        <p class="journal">Nature Machine Intelligence, 2022</p>
-                        <p class="abstract">We propose a new framework for medical image analysis using generative adversarial networks, achieving state-of-the-art results on several benchmark datasets.</p>
+                        <h3>[2] Evaluating the Impacts of Land Use/Land Cover Changes, Climatic Change and Climate Variations on Urban Heat Islands Using the WRF-UCM Model in Hefei, China</h3>
+                        <p class="authors">Keqi Zhou, Lei Zhong, Jie Liu, Zhenhao Wu</p>
+                        <p class="journal">Climatic Change, 2024</p>
                         <div class="publication-links">
-                            <a href="#" class="btn btn-small">PDF</a>
-                            <a href="#" class="btn btn-small">DOI</a>
+                            <a href="https://www.researchgate.net/profile/Keqi-Zhou" class="btn btn-small" target="_blank">ResearchGate</a>
                         </div>
                     </div>
                     <div class="publication">
-                        <h3>Federated Learning with Differential Privacy</h3>
-                        <p class="authors">Zhang, L., Smith, J., Brown, K.</p>
-                        <p class="journal">International Conference on Learning Representations, 2022</p>
-                        <p class="abstract">This work presents a new approach to federated learning that ensures privacy while maintaining model accuracy across distributed datasets.</p>
+                        <h3>[3] Unveiling the Role of Western Pacific Subtropical High in Urban Heat Islands Using Local Climate Zones Coupled WRF-BEP/BEM</h3>
+                        <p class="authors">Zhou, Keqi, Lei Zhong, Jie Liu, Zixin Wang, Jinchen Liu</p>
+                        <p class="journal">Earth Systems and Environment, 2025</p>
                         <div class="publication-links">
-                            <a href="#" class="btn btn-small">PDF</a>
-                            <a href="#" class="btn btn-small">DOI</a>
+                            <a href="https://www.researchgate.net/profile/Keqi-Zhou" class="btn btn-small" target="_blank">ResearchGate</a>
                         </div>
+                    </div>
+                    <div class="publication">
+                        <h3>[4] SO-CNN based urban functional zone fine division with VHR remote sensing image</h3>
+                        <p class="authors">Wen Zhou, Dongping Ming, Xianwei Lv, Keqi Zhou, Hanqing Bao, Zhaoli Hong</p>
+                        <p class="journal">Remote Sensing of Environment, 2020, 236: 111445</p>
+                        <div class="publication-links">
+                            <a href="https://www.researchgate.net/profile/Keqi-Zhou" class="btn btn-small" target="_blank">ResearchGate</a>
+                        </div>
+                    </div>
+                    <div class="publication">
+                        <h3>[5] Responses of the urban atmospheric thermal environment to two distinct heat waves and their changes with future urban expansion in a Chinese megacity</h3>
+                        <p class="authors">Zhao, Y., Zhong, L., Zhou, K., Liu, B., Shu, W.</p>
+                        <p class="journal">Geophysical Research Letters, 2024</p>
+                        <div class="publication-links">
+                            <a href="https://www.researchgate.net/profile/Keqi-Zhou" class="btn btn-small" target="_blank">ResearchGate</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="more-publications" data-en="More publications and details available at:" data-zh="更多出版物和详细信息请访问：">
+                    更多出版物和详细信息请访问：
+                    <a href="https://www.researchgate.net/profile/Keqi-Zhou" target="_blank">ResearchGate</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title" data-en="Research Projects" data-zh="研究项目">研究项目</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3 data-en="NSFC Key Project: High-Resolution Remote Sensing Land Cover Extraction and Scale Effects Analysis" data-zh="国家自然科学基金面上基金项目：基于对象的高分辨率遥感地表覆盖信息精细提取及其尺度效应分析">国家自然科学基金面上基金项目</h3>
+                        <p data-en="High-Resolution Remote Sensing Land Cover Extraction and Scale Effects Analysis" data-zh="高分辨率遥感地表覆盖提取及尺度效应分析">高分辨率遥感地表覆盖提取及尺度效应分析</p>
+                    </div>
+                    <div class="project-card">
+                        <h3 data-en="NSFC Key Project: Scale-Dependent Issues in Remote Sensing Image Processing" data-zh="国家自然科学基金面上基金项目：遥感影像处理与分析中的尺度相关问题">国家自然科学基金面上基金项目</h3>
+                        <p data-en="Scale-Dependent Issues in Remote Sensing Image Processing and Analysis" data-zh="遥感影像处理与分析中的尺度相关问题研究">遥感影像处理与分析中的尺度相关问题研究</p>
+                    </div>
+                    <div class="project-card">
+                        <h3 data-en="National Key R&D Program: Geographic Big Data Mining" data-zh="国家重点研发计划项目">国家重点研发计划项目</h3>
+                        <p data-en="Spatiotemporal Pattern Discovery in Geographic Big Data (Subproject)" data-zh="地理大数据挖掘与时空模式发现子课题">地理大数据挖掘与时空模式发现子课题</p>
+                    </div>
+                    <div class="project-card">
+                        <h3 data-en="CAS 'From 0 to 1' Project" data-zh="中国科学院基础前沿科学研究计划">中国科学院基础前沿科学研究计划</h3>
+                        <p data-en="Quantitative Remote Sensing Methods for Urban Climate Change Impacts (Subproject)" data-zh="城镇化对气候变化影响的定量遥感技术方法研究子课题">城镇化对气候变化影响的定量遥感技术方法研究子课题</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="section bg-light">
+        <section id="skills" class="section bg-light">
             <div class="container">
-                <h2 class="section-title">研究项目</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <h3>智能医疗诊断系统</h3>
-                        <p>开发基于深度学习的医疗图像诊断系统，能够自动识别X光片和MRI图像中的异常模式。使用卷积神经网络和迁移学习技术，提高诊断准确率。</p>
-                        <p class="project-duration">2020 - 2023</p>
+                <h2 class="section-title" data-en="Technical Skills" data-zh="技能">技能</h2>
+                <div class="skills-content">
+                    <div class="skill-category">
+                        <h3 data-en="Numerical Modeling" data-zh="数值模拟">数值模拟</h3>
+                        <ul>
+                            <li data-en="PALM large-eddy simulation model" data-zh="PALM大涡模拟模型">PALM大涡模拟模型</li>
+                            <li data-en="WRF mesoscale model with single/multi-layer coupling" data-zh="WRF中尺度模型（单/多冠层耦合）">WRF中尺度模型（单/多冠层耦合）</li>
+                            <li data-en="Familiar with OpenFOAM" data-zh="熟悉OpenFOAM">熟悉OpenFOAM</li>
+                        </ul>
                     </div>
-                    <div class="project-card">
-                        <h3>多语言机器翻译</h3>
-                        <p>构建支持10种语言的神经机器翻译系统，使用Transformer架构和注意力机制，实现了高质量的跨语言翻译。</p>
-                        <p class="project-duration">2019 - 2021</p>
+                    <div class="skill-category">
+                        <h3 data-en="Machine Learning & Deep Learning" data-zh="机器学习与深度学习">机器学习与深度学习</h3>
+                        <ul>
+                            <li data-en="CNN architectures and deep learning algorithms" data-zh="CNN架构与深度学习算法">CNN架构与深度学习算法</li>
+                            <li data-en="TensorFlow and PyTorch frameworks" data-zh="TensorFlow和PyTorch框架">TensorFlow和PyTorch框架</li>
+                            <li data-en="Python for data analysis and scientific computing" data-zh="Python数据分析与科学计算">Python数据分析与科学计算</li>
+                        </ul>
                     </div>
-                    <div class="project-card">
-                        <h3>自动驾驶感知系统</h3>
-                        <p>开发用于自动驾驶汽车的实时环境感知系统，结合激光雷达和摄像头数据，实现物体检测、跟踪和场景理解。</p>
-                        <p class="project-duration">2018 - 2020</p>
+                    <div class="skill-category">
+                        <h3 data-en="Software Tools" data-zh="软件工具">软件工具</h3>
+                        <ul>
+                            <li data-en="Point cloud processing: LiDAR 360, 3DF Zephyr" data-zh="点云处理：LiDAR 360, 3DF Zephyr">点云处理：LiDAR 360, 3DF Zephyr</li>
+                            <li data-en="Remote sensing: ENVI, eCognition" data-zh="遥感图像：ENVI, eCognition">遥感图像：ENVI, eCognition</li>
+                            <li data-en="GIS: ArcGIS, QGIS" data-zh="GIS分析：ArcGIS, QGIS">GIS分析：ArcGIS, QGIS</li>
+                            <li data-en="3D modeling: Rhino, Cloud Compare" data-zh="三维建筑：Rhino, Cloud Compare">三维建筑：Rhino, Cloud Compare</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3 data-en="Programming Languages" data-zh="编程语言">编程语言</h3>
+                        <ul>
+                            <li data-en="Python (data analysis, scientific computing)" data-zh="Python（数据分析、科学计算）">Python（数据分析、科学计算）</li>
+                            <li data-en="C++ (algorithm development)" data-zh="C++（算法开发）">C++（算法开发）</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -167,44 +255,26 @@
 
         <section id="contact" class="section">
             <div class="container">
-                <h2 class="section-title">联系方式</h2>
+                <h2 class="section-title" data-en="Contact" data-zh="联系方式">联系方式</h2>
                 <div class="contact-content">
                     <div class="contact-info">
-                        <h3>联系信息</h3>
-                        <p><strong>机构：</strong>清华大学计算机科学与技术系</p>
-                        <p><strong>地址：</strong>北京市海淀区清华园1号，100084</p>
-                        <p><strong>邮箱：</strong><a href="mailto:zhang.prof@tsinghua.edu.cn">zhang.prof@tsinghua.edu.cn</a></p>
-                        <p><strong>办公室：</strong>信息科学技术大楼1118室</p>
+                        <h3 data-en="Basic Information" data-zh="基本信息">基本信息</h3>
+                        <p><strong data-en="Name:" data-zh="姓名：">姓名：</strong>Keqi Zhou (周科琦)</p>
+                        <p><strong data-en="Location:" data-zh="籍贯：">籍贯：</strong><span data-en="Hefei, Anhui, China" data-zh="中国安徽省合肥市">中国安徽省合肥市</span></p>
+                        <p><strong data-en="Birth Date:" data-zh="出生日期：">出生日期：</strong>1995-06-07</p>
+                        <p><strong data-en="Phone:" data-zh="电话：">电话：</strong>+86 18556369677</p>
+                        <p><strong data-en="Email:" data-zh="邮箱：">邮箱：</strong><a href="mailto:keqi_zhou@nus.edu.sg">keqi_zhou@nus.edu.sg</a></p>
                         
-                        <h3>社交媒体</h3>
+                        <h3 data-en="Current Position" data-zh="现任职位">现任职位</h3>
+                        <p><strong data-en="Affiliation:" data-zh="机构：">机构：</strong><span data-en="National University of Singapore" data-zh="新加坡国立大学">新加坡国立大学</span></p>
+                        <p><strong data-en="Title:" data-zh="职位：">职位：</strong><span data-en="Postdoctoral Researcher" data-zh="博士后研究员">博士后研究员</span></p>
+                        <p><strong data-en="Supervisor:" data-zh="合作导师：">合作导师：</strong>Prof. Yuan Chao</p>
+                        
+                        <h3 data-en="Academic Links" data-zh="学术链接">学术链接</h3>
                         <div class="social-links">
-                            <a href="https://scholar.google.com/citations?user=example" class="social-link" target="_blank">Google Scholar</a>
-                            <a href="https://www.researchgate.net/profile/example" class="social-link" target="_blank">ResearchGate</a>
-                            <a href="https://www.linkedin.com/in/example" class="social-link" target="_blank">LinkedIn</a>
-                            <a href="https://orcid.org/0000-0000-0000-0000" class="social-link" target="_blank">ORCID</a>
+                            <a href="https://www.researchgate.net/profile/Keqi-Zhou" class="social-link" target="_blank" data-en="ResearchGate" data-zh="ResearchGate">ResearchGate</a>
+                            <a href="https://scholar.google.com/citations?user=kPiI8jcAAAAJ&hl=zh-CN" class="social-link" target="_blank" data-en="Google Scholar" data-zh="Google Scholar">Google Scholar</a>
                         </div>
-                    </div>
-                    
-                    <div class="contact-form">
-                        <form id="contactForm">
-                            <div class="form-group">
-                                <label for="name">姓名</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">邮箱</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">主题</label>
-                                <input type="text" id="subject" name="subject" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">消息</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">发送消息</button>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -213,7 +283,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 张教授. 保留所有权利.</p>
+            <p>&copy; 2026 Keqi Zhou. All rights reserved. | <a href="https://github.com/zkq-urban/zkq-urban.github.io" target="_blank">GitHub</a></p>
         </div>
     </footer>
 

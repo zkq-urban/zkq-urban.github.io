@@ -104,6 +104,26 @@ img {
     transition: 0.3s;
 }
 
+.language-toggle {
+    margin-left: auto;
+}
+
+.lang-btn {
+    background-color: transparent;
+    color: #2c3e50;
+    border: 2px solid #3498db;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background-color: #3498db;
+    color: white;
+}
+
 /* 主要内容区域 */
 main {
     margin-top: 70px; /* 为固定导航栏留出空间 */
@@ -356,6 +376,89 @@ main {
     margin-top: 1rem;
 }
 
+/* 研究方向部分 */
+.research-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.research-item {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #3498db;
+}
+
+.research-item h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+/* 技能部分 */
+.skills-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill-category {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-category h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skill-category li {
+    padding: 8px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.skill-category li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #3498db;
+    font-weight: bold;
+}
+
+/* 出版物简介 */
+.publications-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.more-publications {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+}
+
+.more-publications a {
+    color: #3498db;
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+
 /* 联系方式部分 */
 .contact-content {
     display: grid;
@@ -440,6 +543,13 @@ footer {
     
     .nav-menu.active {
         left: 0;
+    }
+    
+    .language-toggle {
+        margin-left: 0;
+        margin-top: 10px;
+        border-top: 1px solid #eee;
+        padding-top: 10px;
     }
     
     .hero-content h1 {
