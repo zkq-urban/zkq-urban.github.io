@@ -111,15 +111,28 @@ header {
 }
 
 .social-links a {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     color: #b0bec5;
     width: fit-content;
     border-bottom: 1px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.social-links a i {
+    font-size: 1rem;
+    color: #64b5f6;
 }
 
 .social-links a:hover {
     color: #64b5f6;
     border-bottom-color: #64b5f6;
+}
+
+.social-links a:hover i {
+    color: #90caf9;
 }
 
 /* 右侧内容区 */
