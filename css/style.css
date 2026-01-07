@@ -1,4 +1,4 @@
-/* 全局样式 */
+/* 全局基础 */
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
     line-height: 1.6;
     color: #cfd8dc;
     background-color: #0f1419;
-    font-size: 16px;
+    font-size: 15px; /* 稍微缩小字体以适应紧凑布局 */
 }
 
 a {
@@ -33,16 +33,16 @@ header {
 }
 
 .nav-container {
-    max-width: 900px;
+    max-width: 850px;
     margin: 0 auto;
-    padding: 15px 20px;
+    padding: 12px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .nav-logo {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     color: #64b5f6;
 }
@@ -51,10 +51,10 @@ header {
     background: none;
     border: 1px solid #64b5f6;
     color: #64b5f6;
-    padding: 6px 12px;
+    padding: 4px 10px;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     transition: all 0.2s ease;
 }
 
@@ -64,203 +64,193 @@ header {
 }
 
 /* 主容器 */
-main.container {
-    max-width: 900px;
+.container {
+    max-width: 850px;
     margin: 0 auto;
-    padding: 60px 20px 40px; /* 增加顶部内边距以避免被固定导航栏遮挡 */
+    padding: 50px 20px;
+}
+
+/* 头部个人信息 */
+.intro {
+    margin-bottom: 30px;
+}
+
+.intro-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.intro-text h1 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.intro-text .subtitle {
+    font-size: 0.95rem;
+    color: #90caf9;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.intro-img img {
+    width: 140px;
+    height: 140px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid #2a3f5f;
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    font-size: 0.85rem;
+    color: #b0bec5;
+    border-bottom: 1px solid transparent;
+}
+
+.social-links a:hover {
+    color: #64b5f6;
+    border-bottom-color: #64b5f6;
+}
+
+.bio {
+    color: #b0bec5;
+    font-size: 0.95rem;
+    line-height: 1.7;
 }
 
 /* 分隔线 */
 hr {
     border: none;
     border-top: 1px solid #2a3f5f;
-    margin: 40px 0;
+    margin: 25px 0;
 }
 
-/* 标题 */
-h1 {
-    font-size: 2rem;
-    color: #ffffff;
-    margin-bottom: 0.3rem;
-}
-
+/* 板块标题 */
 h2 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: #ffffff;
-    margin-bottom: 1.5rem;
+    margin-bottom: 15px;
     font-weight: 600;
 }
 
-h3 {
-    font-size: 1rem;
-    color: #ffffff;
-    margin-bottom: 0.3rem;
-    font-weight: 600;
+/* 分点列表 */
+.bullet-list {
+    list-style: none;
+    padding-left: 5px;
 }
 
-p {
-    margin-bottom: 0.8rem;
-}
-
-/* 简介部分 */
-.intro .subtitle {
-    font-size: 1.1rem;
-    color: #90caf9;
-    margin-bottom: 1.5rem;
-}
-
-.intro .bio {
-    color: #b0bec5;
-    margin-bottom: 1.5rem;
-    line-height: 1.7;
-}
-
-.social-links {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 1.5rem;
-}
-
-.social-links a {
-    padding: 8px 16px;
-    border: 1px solid #64b5f6;
-    border-radius: 4px;
-    display: inline-block;
-    font-size: 0.9rem;
-    transition: all 0.2s ease;
-}
-
-.social-links a:hover {
-    background-color: #64b5f6;
-    color: #0f1419;
-}
-
-/* 教育背景 */
-.edu-item {
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-}
-
-.edu-item h3 {
-    margin-bottom: 0.3rem;
-}
-
-.affiliation {
-    color: #90caf9;
-    font-size: 0.95rem;
-}
-
-.edu-item p {
+.bullet-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
     color: #b0bec5;
     font-size: 0.95rem;
 }
 
-/* 出版物 */
-.note {
-    color: #90caf9;
+.bullet-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #64b5f6;
+}
+
+/* 通用列表项 (教育等) */
+.list-item {
+    margin-bottom: 15px;
+}
+
+.list-item h3 {
+    font-size: 0.95rem;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.list-item .meta {
     font-size: 0.9rem;
-    margin-bottom: 1.5rem;
+    color: #90caf9;
+}
+
+.list-item .advisor {
+    font-size: 0.85rem;
+    color: #8899a6;
+}
+
+/* 发表文章 */
+.stat {
+    font-size: 0.85rem;
+    color: #64b5f6;
+    margin-bottom: 15px;
     font-style: italic;
 }
 
-.pub-item {
-    margin-bottom: 1.2rem;
-    padding: 0;
+.pub-entry {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+    align-items: flex-start;
 }
 
-.pub-title {
-    font-size: 0.95rem;
-    color: #e0e0e0;
-    margin-bottom: 0.3rem;
+.pub-tag {
+    font-size: 0.7rem;
+    padding: 1px 6px;
+    border-radius: 3px;
+    background-color: #1e3c72;
+    color: #64b5f6;
+    white-space: nowrap;
+    margin-top: 4px;
+    border: 1px solid #2a3f5f;
+}
+
+.pub-tag.first {
+    background-color: #1b3d2f;
+    color: #4fc3f7;
+    border-color: #4fc3f7;
+}
+
+.pub-citation {
+    font-size: 0.9rem;
+    color: #b0bec5;
     line-height: 1.5;
 }
 
-.pub-meta {
-    font-size: 0.85rem;
-    color: #90caf9;
-    margin-bottom: 0;
-}
-
-.badge {
-    display: inline-block;
-    background-color: #1e3c72;
-    color: #64b5f6;
-    padding: 2px 8px;
-    border-radius: 3px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    margin-left: 0.5rem;
-}
-
-.badge.first-author {
-    background-color: #2d5a3d;
-    color: #4fc3f7;
-}
-
-.view-more {
-    margin-top: 1.5rem;
-    font-size: 0.95rem;
-}
-
-/* 研究项目 */
-.proj-item {
-    margin-bottom: 1.3rem;
-}
-
-.proj-item h3 {
-    margin-bottom: 0.3rem;
-}
-
-.proj-item p {
-    color: #b0bec5;
-    margin-bottom: 0;
+.pub-citation strong {
+    color: #e0e0e0;
 }
 
 /* 联系方式 */
-.contact p {
-    margin-bottom: 0.8rem;
+.contact-grid p {
+    margin-bottom: 5px;
     color: #b0bec5;
+    font-size: 0.9rem;
 }
 
 /* 页脚 */
 footer {
     text-align: center;
     padding: 30px 20px;
-    border-top: 1px solid #2a3f5f;
-    color: #6a7f8c;
-    font-size: 0.9rem;
-    margin-top: 40px;
+    color: #546e7a;
+    font-size: 0.8rem;
 }
 
-/* 响应式设计 */
-@media (max-width: 600px) {
-    main.container {
-        padding: 30px 15px;
+/* 响应式 */
+@media (max-width: 650px) {
+    .intro-header {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 15px;
     }
-
-    h1 {
-        font-size: 1.6rem;
-    }
-
-    h2 {
-        font-size: 1.2rem;
-    }
-
-    .social-links {
-        gap: 10px;
-    }
-
-    .social-links a {
-        padding: 6px 12px;
-        font-size: 0.85rem;
-    }
-
-    .pub-title {
-        font-size: 0.9rem;
-    }
-
-    .pub-meta {
-        font-size: 0.8rem;
+    
+    .intro-img img {
+        width: 100px;
+        height: 100px;
     }
 }
