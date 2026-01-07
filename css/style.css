@@ -409,8 +409,16 @@ body.light-mode {
 }
 
 body.light-mode header {
-    background-color: #f5f5f5;
-    border-bottom: 1px solid #ddd;
+    background-color: #f5f5f5 !important;
+    border-bottom: 1px solid #ddd !important;
+}
+
+body.light-mode .navbar {
+    background-color: transparent !important;
+}
+
+body.light-mode .nav-container {
+    background-color: transparent !important;
 }
 
 body.light-mode .nav-logo {
@@ -423,7 +431,7 @@ body.light-mode .nav-menu a {
 
 body.light-mode .nav-menu a:hover {
     color: #0066cc !important;
-    background-color: rgba(0, 102, 204, 0.1);
+    background-color: rgba(0, 102, 204, 0.1) !important;
 }
 
 body.light-mode .lang-btn,
@@ -434,7 +442,7 @@ body.light-mode .theme-btn {
 
 body.light-mode .lang-btn:hover,
 body.light-mode .theme-btn:hover {
-    background-color: rgba(0, 102, 204, 0.1);
+    background-color: rgba(0, 102, 204, 0.1) !important;
 }
 
 body.light-mode h2 {
@@ -456,7 +464,7 @@ body.light-mode .profile-info .subtitle {
 }
 
 body.light-mode hr {
-    border-top-color: #ddd;
+    border-top-color: #ddd !important;
 }
 
 body.light-mode .social-links a {
