@@ -335,9 +335,38 @@ h2 {
 
 /* 页脚 */
 footer {
-    padding-top: 40px;
-    color: #546e7a;
-    font-size: 0.8rem;
+    background-color: #1a1f2e;
+    border-top: 1px solid #2a3f5f;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+footer p {
+    margin: 0;
+    color: #b0bec5;
+    font-size: 0.9rem;
+}
+
+#busuanzi_container_site_pv {
+    font-size: 0.8rem !important;
+    color: #b0bec5 !important;
+    margin: 0;
+}
+
+#busuanzi_value_site_pv {
+    font-weight: bold;
+    color: #64b5f6;
 }
 
 /* 响应式设计 */
