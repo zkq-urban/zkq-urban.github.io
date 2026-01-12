@@ -2,6 +2,29 @@
 let currentLanguage = localStorage.getItem('language') || 'en';
 let currentTheme = localStorage.getItem('theme') || 'dark';
 
+// 访问统计功能
+function initVisitorCounter() {
+    // 尝试使用不蒜子服务，如果失败则使用备选方案
+    const fallbackCounter = document.getElementById('fallback_counter');
+    
+    // 监听不蒜子加载完成事件
+    if (typeof busuanziCallback === 'undefined') {
+        window.busuanziCallback = function() {
+            if (document.getElementById('busuanzi_value_site_pv')) {
+                document.getElementById('fallback_counter').style.display = 'none';
+            }
+        };
+    }
+    
+    // 如果长时间未加载，则显示备选信息
+    setTimeout(() => {
+        if (fallbackCounter && fallbackCounter.textContent === 'Loading...') {
+            // 如果不蒜子未加载，显示预设信息或隐藏加载提示
+            fallbackCounter.textContent = 'N/A';
+        }
+    }, 5000); // 5秒后如果还未加载则显示 N/A
+}
+
 function setLanguage(lang) {
     currentLanguage = lang;
     localStorage.setItem('language', lang);
@@ -49,6 +72,7 @@ function setTheme(theme) {
 document.addEventListener('DOMContentLoaded', function() {
     setLanguage(currentLanguage);
     setTheme(currentTheme);
+    initVisitorCounter();
     
     // 语言切换按钮事件监听
     const langToggle = document.getElementById('langToggle');
