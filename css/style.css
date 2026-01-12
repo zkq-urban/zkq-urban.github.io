@@ -497,3 +497,24 @@ body.light-mode .social-links a:hover {
     color: #0066cc !important;
     border-bottom-color: #0066cc !important;
 }
+
+/* 白天模式下出版物标签样式 */
+body.light-mode .pub-tag {
+    background-color: #e3f2fd !important;
+    color: #1976d2 !important;
+    border-color: #bbdefb !important;
+}
+
+body.light-mode .pub-tag.first {
+    background-color: #e8f5e9 !important;
+    color: #388e3c !important;
+    border-color: #c8e6c9 !important;
+}
+
+body.light-mode .pub-citation {
+    color: #333333 !important;
+}
+
+body.light-mode .pub-citation strong {
+    color: #000000 !important;
+}
