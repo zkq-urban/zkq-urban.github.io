@@ -358,12 +358,6 @@ footer p {
     font-size: 0.9rem;
 }
 
-#busuanzi_container_site_pv {
-    font-size: 0.8rem !important;
-    color: #b0bec5 !important;
-    margin: 0;
-}
-
 #busuanzi_value_site_pv {
     font-weight: bold;
     color: #64b5f6;
