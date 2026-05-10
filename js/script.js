@@ -1,6 +1,6 @@
 // 语言切换功能 v1.2 - 修复 HTML 标签渲染问题
 let currentLanguage = localStorage.getItem('language') || 'en';
-let currentTheme = localStorage.getItem('theme') || 'dark';
+let currentTheme = localStorage.getItem('theme') || 'light';
 
 function setLanguage(lang) {
     currentLanguage = lang;
